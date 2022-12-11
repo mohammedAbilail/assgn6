@@ -1,0 +1,31 @@
+<div class="row">
+<div class="col-md-12">
+<h2>Categories</h2>
+<hr />
+
+<section>
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Category ID</th>
+                    <th>Category Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each categories}}
+                <td><a href="/demos?category={{this.id}}">{{this.id}}</a></td>
+                <td><a href="/demos?category={{this.category}}">{{this.category}}</a></td>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+    {{#unless demos}}
+        <div class="col-md-12 text-center">
+            <strong>{{message}}</strong>
+        </div>
+    {{/unless}}
+</section>>
+
+</div>
+</div>

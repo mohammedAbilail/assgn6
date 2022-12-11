@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About 144013208.Mohammad</title>
+   
+    <link rel="Stylesheet" href="/public/css/main.css">
+</head>
+<body>
+    <nav>
+        <div class="buttons">
+            <span class="navbar-brand" href="#">WEB322 - Manav</span>
+            <button>{{#navlink "/home"}}Home{{/navlink}}</button>                 
+            <button>{{#navlink "/products"}}Products{{/navlink}}</button>   
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li>{{#navLink "/"}}Home{{/navLink}}</li>
+            <li>{{#navLink "/categories"}}Categories{{/navLink}}</li>
+            <li>{{#navLink "/products/add"}}Add Product{{/navLink}}</li>
+        </ul>
+    </nav>
+    <section>
+    <div class="indexBody">
+       {{body}} 
+    </div>
+    </section>
+    <footer>
+        <div class="copyright">
+            <p>©2022-Manav</p>
+        </div>
+    </footer>
+</body>
+</html>
